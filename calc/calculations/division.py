@@ -11,12 +11,13 @@ class Division(Operation, Result, ABC):
     # This is the instance method
     def get_output(self):
         """get the division results"""
-        div_of_elements = 1.0
         try:
-            for value in self._values:
-                div_of_elements = div_of_elements / value
+            for ind, value in enumerate(self._values):
+                if ind == 0:
+                    div_of_elements = value
+                else:
+                    div_of_elements = div_of_elements / value
             my_formatter = "{0:.2f}"
-            div_of_elements = my_formatter.format(div_of_elements)
-        except ZeroDivisionError as my_err:
-            raise ZeroDivisionError from my_err
-        return div_of_elements
+            return my_formatter.format(div_of_elements)
+        except ZeroDivisionError:
+            return 'ZeroDivisionError'
