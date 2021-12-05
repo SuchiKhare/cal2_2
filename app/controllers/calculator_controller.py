@@ -9,9 +9,7 @@ class CalculatorController(ControllerBase):
         if request.form['input1'] == '' or request.form['input2'] == '':
             error = 'Please enter a numerical values for input 1 and or input 2'
         else:
-            flash('Calculations are successful')
-            flash('Congratulations')
-            flash('Go ahead for next calculations !!')
+            flash('Congratulations !! Calculations are successful')
 
             # get the values out of the form
             input1 = request.form['input1']
