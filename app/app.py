@@ -1,5 +1,7 @@
 """A simple flask web app"""
 from flask import Flask
+
+from app.controllers.beauty_controller import BeautyController
 from app.controllers.index_controller import IndexController
 from app.controllers.calculator_controller import CalculatorController
 
@@ -20,3 +22,8 @@ def calculator_get():
 @app.route("/calculator", methods=['POST'])
 def calculator_post():
     return CalculatorController.post()
+
+
+@app.route("/beauty", methods=['GET'])
+def beauty_get():
+    return BeautyController.get()
