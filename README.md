@@ -4,10 +4,10 @@ Travis Free Account Expired
 Git : https://github.com/SuchiKhare/cal2_2/tree/beauty
 
 Used Dummy/Faked data for the beautiful table Homework
-Basic flow is (app.py/controller/dto the values are populated/ result.html)
+Basic flow is (app.py-->controller-->dto the values are populated and the dto class name is Print--> result.html)
 
 
-(1) Boostrap Table with call to javascipt to make table beautiful in terms of 
+(1) Bootstrap Table with call to javascipt to make table beautiful in terms of 
 pagination, sorting , searching.
 <img width="1003" alt="1_js_bootstrap_table" src="https://user-images.githubusercontent.com/90444833/145627040-f17f2aa1-c74f-4674-97a8-032c9b67d081.PNG">
 (2)Below image shows the sorting is done on the operation name , so all addition operations are shown first.
