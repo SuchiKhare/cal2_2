@@ -1,23 +1,17 @@
-# Calculator Project Setup
+# Homework - Beautiful tables
 Travis Free Account Expired
-To run tests, Lint, and Coverage report use this command:
 
-pytest  --pylint --cov
+Git : https://github.com/SuchiKhare/cal2_2/tree/beauty
 
-.pylintrc is the config for pylint
-.coveragerc is the config for coverage
-setup.py is a config file for pytest
+Used Dummy/Faked data for the beautiful table Homework
+Basic flow is (app.py/controller/dto the values are populated/ result.html)
 
 
-#how the calculator page looks like at this point of HW
-<img width="1019" alt="Image1" src="https://user-images.githubusercontent.com/90444833/145118241-302e1bad-51c5-4b6e-b689-7387819066ce.PNG">
-#Showing the error message if the field(input 1 and/or input2)  empty
-<img width="1042" alt="2_no_proper_input" src="https://user-images.githubusercontent.com/90444833/145120254-cd71e629-4e6a-417c-b35c-3dd7e6e15d3b.PNG">
-#Division input
-<img width="1019" alt="3_division_input" src="https://user-images.githubusercontent.com/90444833/145118243-43ba5943-56e7-42ee-bb9f-ad2926f5fb2d.PNG">
-#Division result
-<img width="1011" alt="4_division_result" src="https://user-images.githubusercontent.com/90444833/145118246-56430c3a-6446-471f-9e89-c42832e0a4a7.PNG">
-#Multiplication input
-<img width="1081" alt="5_multiply_input" src="https://user-images.githubusercontent.com/90444833/145118248-d5ec60f0-5b2b-4f27-888d-b35741e75bc2.PNG">
-#Multiplication result
-<img width="1031" alt="6_multiply_result" src="https://user-images.githubusercontent.com/90444833/145118249-9e8f5d3f-b6c8-468f-b046-824a0471ea20.PNG">
+
+<img width="1003" alt="1_js_bootstrap_table" src="https://user-images.githubusercontent.com/90444833/145627040-f17f2aa1-c74f-4674-97a8-032c9b67d081.PNG">
+
+<img width="996" alt="2_sort_operation_name" src="https://user-images.githubusercontent.com/90444833/145627056-856034d8-5167-47ec-922e-9e7431b4353b.PNG">
+
+<img width="1011" alt="3_sort_on_result" src="https://user-images.githubusercontent.com/90444833/145627072-9cb3502a-cda6-4c43-b238-b3a512387c64.PNG">
+
+<img width="1004" alt="4_search_by_mul" src="https://user-images.githubusercontent.com/90444833/145627085-3f122b85-e327-4afd-a885-7763c58a6a4f.PNG">
