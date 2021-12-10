@@ -15,13 +15,17 @@ class Print:
         self.result = result
 
     def get_input1(self):
+        """get input 1"""
         return self.input1
 
     def get_input2(self):
+        """get input2"""
         return self.input2
 
     def get_operation_name(self):
+        """get operation name"""
         return self.operation_name
 
     def get_result(self):
+        """get result of the operation"""
         return self.result
