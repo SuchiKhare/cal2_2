@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>SOLID</title>
+    <link rel="stylesheet" href="css/suchicustom.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/suchibanner.css">
+    <script src="javascript/suchijs.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img class="navbar-brand" src="images/logo.svg" alt="logo image">
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li class="dropdown, active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-fw fa-wrench"></i>Menu(
+                            Project1 and Project2)
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="internethistory.html">P1:The Internet</a></li>
+                            <li><a href="webserver.html">P1:Web Server</a></li>
+                            <li><a href="ipanddns.html">P1:IP Address and DNS</a></li>
+                            <li><a href="pylintfile.html">P2:pylint</a></li>
+                            <li><a href="basicoops.html">P2:Glossary of OOP terms with definitions></a></li>
+                            <li><a href="caloops.html">P2:Calculator and principles of OOP</a></li>
+                            <li><a href="aaatesting.html">P2:AAA testing with Python</a></li>
+                            <li><a href="solid.html"><b>P2:Calculator and SOLID Object Oriented Design</b></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html"><i class="fa fa-fw fa-user"></i>About</a></li>
+                    <li><a href="contactus.html"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Navbar -->
+
+        <!-- Background image -->
+
+        <!-- Background image -->
+
+    </header>
+    <div class="container-fluid text-center">
+
+
+        <div class="row content">
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href=""><b>Calculator and SOLID</b></a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-sm-2 sidenav">
+                <p><a href="internethistory.html">P1:The Internet</a></p>
+                <p><a href="webserver.html">P1:Web Server</a></p>
+                <p><a href="ipanddns.html">P1:IP Address and DNS</a></p>
+                <p><a href="pylintfile.html">P2:pylint</a></p>
+                <p><a href="basicoops.html">P2:Glossary of OOP terms with definitions></a></p>
+                <p><a href="caloops.html">P2:Calculator and principles of OOP</a></p>
+                <p><a href="aaatesting.html">P2:AAA testing with Python</a></p>
+                <p><a href="solid.html"><b>P2:Calculator and SOLID Object Oriented Design</b></a></p>
+                <hr class="black">
+            </div>
+            <div class="col-sm-8 text-left">
+
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">What is SOLID</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>In software engineering, SOLID is a mnemonic acronym for five design principles
+                                        intended to make software designs more understandable,
+                                        flexible, and maintainable.
+                                    </li>
+                                    <li>The principles are a subset of many principles promoted by American software
+                                        engineer and instructor Robert C. Martin
+                                    </li>
+                                    <li> The SOLID concepts are</li>
+                                </ul>
+                            </div>
+                            <div class="panel-body">
+                                <p><b>The Single-responsibility principle:</b>
+                                    A class should have one, and only one, reason to change”
+                                    In other words, every component of your code (in general a class, but also a
+                                    function)
+                                    should have one and only one responsibility. As a consequence of that, there should
+                                    be
+                                    only a reason to change it. </p>
+                                <br>
+                                <p><b>The Open–closed principle:</b>
+                                    Software entities should be open for extension, but closed for modification.</p>
+                                <br>
+                                <p><b>The Liskov substitution principle:</b>
+                                    Functions that use pointers or references to base classes must be able to use
+                                    objects of derived classes without knowing it.
+                                </p><br>
+                                <p>
+                                    <b>The Interface segregation principle:</b>
+                                    "Many client-specific interfaces are better than one general-purpose interface.</p>
+
+                                <br>
+                                <p>
+                                    <b>The Dependency inversion principle:</b>
+                                    Depend upon abstractions, not upon concretions.</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Single-responsibility
+                                    principle (in calculator)</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p class="grw-font">What</p>
+                                <ul>
+                                    <li> A class should have one, and only one, reason to change”
+                                        In other words, every component of your code (in general a class, but also a
+                                        function)
+                                        should have one and only one responsibility. As a consequence of that, there
+                                        should be
+                                        only a reason to change it.
+                                    </li>
+                                </ul>
+
+                                <p class="grw-font">Python file reference : calculator.py</p>
+                                <ul>
+                                    <li>Class: Calculator</li>
+                                    <li>All the math_operations addition, subtraction, multiplication, division etc
+                                        are atomic functions. meaning when a function’s responsibility cannot be divided
+                                        into more sub-parts.
+                                    </li>
+                                    <li>Calculator class functions i.e, add_numbers, subtract_numbers, subtract_numbers
+                                        and divide_numbers are having single responsibility of
+                                        adding , subtracting , multiplying and dividing numbers of tuples respectively.
+                                    </li>
+                                    <li>Class has a single responsibility of math operations - add, multiply, subtract,
+                                        divide.
+                                        Apart from math operations or calculator operation, class is not responsible for
+                                        other work
+                                    </li>
+                                </ul>
+
+                                <p class="grw-font">Example 1 is Calculator class</p>
+                                <ul style="list-style-type:none;">
+                                    <li>Below function has single responsibility of addition of elements</li>
+                                    <li>@staticmethod</li>
+                                    <li>def add_numbers(tuple_elements: tuple):</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;"""adds elements of tuple"""</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Calculations.add_addition_calculation(tuple_elements)
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;return True</li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li>In addition to methods has single responsibility , the class also has single
+                                        responsibility to work on calculator operations only such as add, subtract etc
+                                    </li>
+                                </ul>
+                                <p class="grw-font">Example 2 is Calculations class</p>
+                                <ul>
+                                    <li>Calculations maintains the static variable list history and class has single
+                                        responsibility to work on history - ex - add to history, get result from history
+                                        ,
+                                        get object from history etc
+                                    </li>
+                                </ul>
+                                <p class="grw-font">Advantages: </p>
+                                <ul>
+                                    <li>It is easier to localize errors.</li>
+                                    <li>Any error in execution will point out to a smaller section of your code,
+                                        accelerating your debug phase.
+                                    </li>
+                                    <li>Any part of the code is reusable in other section of your code.
+                                        Moreover and, often overlooked, is that it is easier to create testing for each
+                                        function of your code.
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"> Open–closed
+                                    principle (in calculator)</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p class="grw-font">Python file reference : calculator.py</p>
+                                <ul>
+                                    <li>Software entities should be open for extension but closed for modification.</li>
+                                    <li>You should not need to modify the code you have already written to accommodate
+                                        new functionality,but simply add what you now need.
+                                    </li>
+                                    <li>This does not mean that you cannot change your code when the code premises needs
+                                        to be modified, but that if you need to add new functions similar to the one
+                                        present, you should not require to change other parts of the code.
+                                    </li>
+                                </ul>
+                                <p class="grw-font">Example</p>
+                                <ul style="list-style-type:none;">
+                                    <li>class <b>Calculator:</b></li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def add_numbers(tuple_elements: tuple):....</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def subtract_numbers(tuple_elements: tuple):...</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def multiply_numbers(tuple_elements: tuple):...</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def divide_numbers(tuple_elements: tuple):...</li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li>If we want to add new functionality such as SquareRoot and Mean or Square or
+                                        Median
+                                        etc in the Calculator class, then we are just needed to add the new method
+                                        instead of changing the existing
+                                        method add, subtract, multiply and divide.None of the existing function need to
+                                        be modified when we need to add new functionality.No existing functions in the
+                                        other classes such as Calculations (for history) needs to be modified.
+                                        that is why we call that Software entities should be open for extension but
+                                        closed for modification.
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                </ul>
+                                <p class="grw-font">Advantage</p>
+                                <ul style="list-style-type:none;">
+                                    <li>The result is a very flexible class, that requires minimum time to be
+                                        maintained.
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Liskov substitution
+                                    principle (in calculator)</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p class="grw-font">Python file reference : Operation.py and Addition.py</p>
+                                <ul>
+                                    <li>Functions that use pointers or references to base classes must be able to use
+                                        objects of derived
+                                        classes without knowing it.
+                                    </li>
+                                    <li>Derived classes must be substitutable for their base classes</li>
+                                    <li>if a subclass redefines a function also present in the parent class, a
+                                        client-user should not be noticing any difference in behaviour, and it is a
+                                        substitute for the base class.For example, if you are using a function and your
+                                        colleague change the base class, you should not notice any difference in the
+                                        function that you are using.
+                                    </li>
+                                </ul>
+                                <p class="grw-font">Example (Pls note that this is not in Calculator but just to
+                                    explain the principle</p>
+                                <ul style="list-style-type:none;">
+                                    <li>class <b>Operator:</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# Base Class</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, values: tuple):</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._values =
+                                        Operation.convert_cal_input_to_float(values)
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <li>class <b>Addition:</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# Subclass Class</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, values: tuple, name: String):</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super().__init__(self, values)
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = name</li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <li>If we are using a = <b>Operation((1.0, 2.0, 3.0))</b></li>
+                                    <li>then we can use a = <b>Addition((1.0, 2.0, 3.0), "name")</b></li>
+
+                                </ul>
+                                <br>
+                                <p class="grw-font">Advantage</p>
+                                <ul style="list-style-type:none;">
+                                    <li>The result of this principle is that we’d write our code in a consistent manner
+                                        and, the end-user will need to learn how our code works
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">The Interface
+                                    Segregation Principle (ISP) (in calculator)</a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p class="grw-font">Python file reference : result.py and addition.py</p>
+                                <ul>
+                                    <li>Clients should not be forced to depend upon interfaces that they do not use.
+                                    </li>
+
+                                </ul>
+                                <p class="grw-font">Example</p>
+                                <ul style="list-style-type:none;">
+                                    <li>class <b>Result:</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;"""result for all the operations"""</li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;@abstractmethod</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def get_output(self):</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""this is the abstract method
+                                        to be implemented by impl classes"""
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <li>class <b>Addition:</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;"""subclass Addition extending base Operation"""</li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# This is the instance method</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def get_output(self):</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""Adds the elements in tuple
+                                        and return"""
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum_of_elements = 0.0</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for value in self._values:
+                                    <li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum_of_elements =
+                                        sum_of_elements + value
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return sum_of_elements</li>
+                                </ul>
+                                <br>
+                                <ul>
+
+                                    <li>Result is the abstract class having abstract method get_output().This has
+                                        specific method that is needed by all operation of the subclass - Addition
+                                        etc.Classes are
+                                        not forced to implement any methods from the interface that are not supposed to
+                                        be part of their
+                                        behaviour.
+                                    </li>
+                                </ul>
+                                <p class="grw-font">Advantage</p>
+                                <ul style="list-style-type:none;">
+                                    <li>Final aim to keep our classes clean and minimise mistakes.</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Dependency
+                                    inversion principle (in calculator)</a>
+                            </h4>
+                        </div>
+                        <div id="collapse12" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p class="grw-font">Python file reference : calculator_history-test.py</p>
+                                <ul>
+                                    <li>Abstractions should not depend on details.
+                                        Details should depend on abstraction. High-level modules should not depend on
+                                        low-level modules. Both should depend on abstractions
+                                    </li>
+                                    <li>
+                                        Dependency Injection (DI) is a programming technique that makes a class
+                                        independent of its dependencies.
+                                        In software engineering, dependency injection is a technique whereby one
+                                        object supplies the dependencies of another object. A ‘dependency’ is an object
+                                        that can be used, for example as a service. Instead of a client specifying which
+                                        service it will use, something tells the client what service to use. The
+                                        ‘injection’ refers to the passing of a dependency (a service) into the object
+                                        (a client) that would use it
+                                    </li>
+                                    <li>High coupling. If the coupling is high it’s like using a superglue or welding.
+                                        No easy way to disassemble.
+                                    </li>
+
+                                    <li>High cohesion. High cohesion is like using the screws. Very easy to disassemble
+                                        and assemble back or assemble a different way. It is an opposite to high
+                                        coupling.
+                                    </li>
+                                    <li> good reference at
+                                        https://python-dependency-injector.ets-labs.org/introduction/di_in_python.html
+                                    </li>
+                                </ul>
+                                <p class="grw-font">Example of dependency Injection in Calculator </p>
+                                <ul style="list-style-type:none;">
+                                    <li><b>Dependency of clear_history_fixture is injected in method
+                                        test_add_calculation_to_history </b></li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <li><b>@pytest.fixture</b></li>
+                                    <li>def clear_history_fixture():</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;"""fixture method will run each time passed to the
+                                        test"""
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# pylint: disable=redefined-outer-name</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Calculations.clear_history()</li>
+
+
+                                    <li>def test_add_calculation_to_history(<b>clear_history_fixture</b>,
+                                        setup_calculation_fixture):
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;"""testing clear history returns true for success"""
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# pylint:
+                                        disable=unused-argument,redefined-outer-name,singleton-comparison
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;assert Calculations.count_history() == 3</li>
+                                </ul>
+                                <p class="grw-font">General Example of before dependency Injection</p>
+                                <ul style="list-style-type:none;">
+
+                                    <li>import os</li>
+                                    <li>class ApiClient:</li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self):</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.api_key =
+                                        os.getenv("API_KEY") # dependency
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.timeout =
+                                        os.getenv("TIMEOUT") # dependency
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li>class Service:</li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self):</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.api_client = ApiClient() #
+                                        dependency
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def main() -> None:</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;service = Service() #
+                                        dependency
+                                    </li>
+                                    <li>...
+                                        <br>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;if __name__ == "__main__":</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main()</li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li>If we pass parameters in init then dependency is injected or
+                                        When you call main() function the Service dependency is assembled and injected
+                                        automatically
+                                        using DI principle.
+                                    </li>
+                                </ul>
+                                <p class="grw-font">Advantage</p>
+                                <ul style="list-style-type:none;">
+                                    <li>our code is independent of what takes in input and it is not susceptible to
+                                        changes and out of our direct control.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 sidenav">
+                <div class="text-center">
+                    <img class="img-fluid" height="180" width="180" src="images/solid-design-principles-2.jpg"
+                         alt="image of solid"><br><br>
+                    <p class="left">others:DRY: Don’t Repeat Yourself
+                    </p>
+                </div>
+            </div> <!-- closed col-sm-2 sidenav -->
+        </div>
+
+    </div>
+
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <div>
+            SuchiKhare &#169;
+        </div>
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+            <a href="https://www.facebook.com" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/SuchiKhare/calc2/tree/cal2_part5_scratch" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="w3cvalidator/solid.html" class="me-4 text-reset">
+                W3CValidator
+            </a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

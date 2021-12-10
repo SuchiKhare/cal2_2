@@ -1,0 +1,244 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid text-center">
+
+
+        <div class="row content">
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href=""><b>pylint</b></a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-sm-2 sidenav">
+                <p><a href="pylintfile.html"><b>P2:pylint</b></a></p>
+                <p><a href="caloops.html">P2:Calculator and principles of OOP</a></p>
+                <p><a href="aaatesting.html">P2:AAA testing with Python</a></p>
+                <p><a href="solid.html">P2:Calculator and SOLID Object Oriented Design</a></p>
+                <hr class="black">
+            </div>
+            <div class="col-sm-8 text-left">
+
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">What is pylint</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>Pylint is a source-code, bug and quality checker for the Python programming
+                                        language. It is named following a common convention in Python of a "py" prefix,
+                                        and a nod to the C programming lint program. It follows the style recommended by
+                                        PEP 8, the Python style guide
+                                    </li>
+                                    <li>It is similar to Pychecker and Pyflakes, but includes the following features:
+                                    </li>
+                                    <li>It can be used as a stand-alone program, but also integrates with IDEs such as
+                                        Eclipse with PyDev and Visual Studio Code, and editors such as Atom,[8] GNU
+                                        Emacs
+                                        and Vim.
+                                    </li>
+                                </ul>
+                                <ul style="list-style-type:none;">
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Checking the length of each line</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Checking that variable names are well-formed according
+                                        to the project's coding standard
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Checking that declared interfaces are truly
+                                        implemented.
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li><b>What is PEP-8</b></li>
+                                </ul>
+                                <ul>
+                                    <li>PEP 8, sometimes spelled PEP8 or PEP-8, is a document that provides <b>guidelines
+                                        and best practices on how to write Python code </b></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">What is
+                                    pylintrc</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>Pylint requires configuration via a <b>.pylintrc configuration file</b> as
+                                        detailed in Pylint's documentation.
+
+                                        Examples of few configuration is shown below:
+                                    </li>
+                                </ul>
+                                <ul style="list-style-type:none;">
+                                    <li># A comma-separated list of package or module names from where C extensions
+                                        may
+                                    </li>
+                                    <li># be loaded. Extensions are loading into the active Python interpreter and may
+                                    </li>
+                                    <li># run arbitrary code.</li>
+                                    <li>extension-pkg-allow-list=</li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li># Files or directories to be skipped. They should be base names, not paths.</li>
+                                    <li>ignore=CVS, setup.py</li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li>[MESSAGES CONTROL]</li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li># Only show warnings with the listed confidence levels. Leave empty to show</li>
+                                    <li> # all. Valid levels: HIGH, INFERENCE, INFERENCE_FAILURE, UNDEFINED.</li>
+                                    <li>confidence=</li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li># Disable the message, report, category or checker with the given id(s). You
+                                    </li>
+                                    <li># can either give multiple identifiers separated by comma (,) or put this.</li>
+                                    <li>disable=raw-checker-failed,</li>
+                                    <li>bad-inline-option,</li>
+                                    <li>locally-disabled,</li>
+                                    <li>file-ignored,</li>
+                                    <li>suppressed-message,</li>
+                                    <li>useless-suppression,</li>
+                                    <li>deprecated-pragma,</li>
+                                    <li>use-symbolic-message-instead</li>
+                                    <li>.....</li>
+                                    <li>[BASIC]</li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li># Naming style matching correct argument names.</li>
+                                    <li>argument-naming-style=snake_case</li>
+                                </ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li># Regular expression matching correct argument names. Overrides argument-</li>
+                                    <li># naming-style.</li>
+                                    <li>#argument-rgx=</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">(General)-How to
+                                    configure pylint/Installing Pylint</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p class="grw-font">Quick Steps</p>
+                                <ul>
+                                    <li>Open a Command Prompt or Terminal. On Windows, navigate to the Python root
+                                        directory (install location)
+                                    </li>
+                                    <li>Run the following command: python -m pip install pylint.</li>
+                                    <li>Note the location of the pylint executable: Windows - pylint.exe should be in
+                                        the
+                                        Scripts folder (Python root directory)
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">(Calculator)-How
+                                    pylint is configured</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p class="grw-font"> Calculator project-pylint configuration</p>
+                                <ul>
+                                    <li>configure pylintrc in root directory</li>
+                                    <li>pip install -r requirements.txt</li>
+                                    <li>requirement.txt has packages needs to be installed such as pytest-cov (for
+                                        coverage of the code)
+                                        , pytest , pycodestyle and pytest-pylint
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">pylint instruction
+                                    through code</a>
+                            </h4>
+                        </div>
+                        <div id="collapse12" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>Examples of disabling pylint from the code instead of pylintrc configuration
+                                        file
+                                    </li>
+                                    <li># pylint: disable=too-few-public-methods</li>
+
+                                    <li># pylint: disable=redefined-outer-name</li>
+                                </ul>
+                                <p class="grw-font">Example in calculator.py</p>
+                                <ul style="list-style-type:none;">
+                                    <li>class Calculator:</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;"""calculator class"""</li>
+
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<b># pylint: disable=too-few-public-methods</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;@staticmethod</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def add_numbers(tuple_elements: tuple):</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""adds elements in tuple"""
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculations.add_addition_calculation(tuple_elements)</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return True</li>
+                                </ul>
+                                <p class="grw-font">Example in calculator_history_test.py</p>
+                                <ul style="list-style-type:none;">
+
+                                    <li>@pytest.fixture</li>
+                                    <li>def clear_history_fixture():</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;"""fixture method will run each time passed to the
+                                        test"""
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<b># pylint: disable=redefined-outer-name</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Calculations.clear_history()</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 sidenav">
+                <div class="text-center">
+                    <img class="img-fluid" height="180" width="180" src="{{ url_for('static', filename='images/coding.jpg') }}"
+                         alt="image of solid"><br><br>
+                    <p class="left">source-code checker </p>
+                    <p class="left">bug checker</p>
+                    <p class="left">quality checker</p>
+                </div>
+            </div> <!-- closed col-sm-2 sidenav -->
+        </div>
+
+    </div>
+</div>
+{% endblock %}

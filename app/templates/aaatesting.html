@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>AAA Testing</title>
+    <link rel="stylesheet" href="css/suchicustom.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/suchibanner.css">
+    <script src="javascript/suchijs.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img class="navbar-brand" src="images/logo.svg" alt="logo image">
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li class="dropdown, active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-fw fa-wrench"></i>Menu(
+                            Project1 and Project2)
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="internethistory.html">P1:The Internet</a></li>
+                            <li><a href="webserver.html">P1:Web Server</a></li>
+                            <li><a href="ipanddns.html">P1:IP Address and DNS</a></li>
+                            <li><a href="pylintfile.html">P2:pylint</a></li>
+                            <li><a href="basicoops.html">P2:Glossary of OOP terms with definitions</a></li>
+                            <li><a href="caloops.html">P2:Calculator and principles of OOP</a></li>
+                            <li><a href="aaatesting.html"><b>P2:AAA testing with Python</b></a></li>
+                            <li><a href="solid.html">P2:Calculator and SOLID Object Oriented Design</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html"><i class="fa fa-fw fa-user"></i>About</a></li>
+                    <li><a href="contactus.html"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Navbar -->
+
+        <!-- Background image -->
+
+        <!-- Background image -->
+
+    </header>
+    <div class="container-fluid text-center">
+
+
+        <div class="row content">
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href=""><b>AAA Testing</b></a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-sm-2 sidenav">
+                <p><a href="internethistory.html">P1:The Internet</a></p>
+                <p><a href="webserver.html">P1:Web Server</a></p>
+                <p><a href="ipanddns.html">P1:IP Address and DNS</a></p>
+                <p><a href="pylintfile.html">P2:pylint</a></p>
+                <p><a href="basicoops.html">P2:Glossary of OOP terms with definitions</a></p>
+                <p><a href="caloops.html">P2:Calculator and principles of OOP</a></p>
+                <p><a href="aaatesting.html"><b>P2:AAA testing with Python</b></a></p>
+                <p><a href="solid.html">P2:Calculator and SOLID Object Oriented Design</a></p>
+                <hr class="black">
+            </div>
+            <div class="col-sm-8 text-left">
+
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">What is
+                                    AAA(Arrange, Act, Assert) testing</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>The AAA pattern is a common <b>unit testing</b> pattern. It is a way to arrange
+                                        and
+                                        organize test code to make unit tests clear and understandable,
+                                        and consists of separating each unit test method into three sections:
+                                        <b>Arrange, Act, and Assert</b>. A test is a procedure that exercises a behavior
+                                        to determine if the behavior functions correctly.
+                                        There are several different kinds of tests, like unit tests, integration tests,
+                                        or end-to-end tests, but all functional tests do the same basic thing:
+                                        they try something and report PASS or FAIL.
+                                    </li>
+
+                                </ul>
+
+                                <p class="grw-font">What is Arrange, Act and Assert</p>
+
+                                <ul style="list-style-type:none;">
+                                    <li><b>ARRANGE </b>section you only have code required to setup that specific test.
+                                        Here objects would be created, mocks setup (if you are using one) and
+                                        potentially expectations would be set. Arrange inputs and targets. Arrange steps
+                                        should set up the test case. Does the test require any objects or special
+                                        settings? Does it need to prep a database? Does it need to log into a web app?
+                                        Handle all of these operations at the start of the test.
+                                    </li>
+                                    <li><b>ACT </b>section which should be the invocation of the method being tested.Act
+                                        on the target behavior. Act steps should cover the main thing to be tested. This
+                                        could be calling a function or method, calling a REST API, or interacting with a
+                                        web page. Keep actions focused on the target behavior.
+                                    <li><b>ASSERT </b> section would simply check whether the expectations were met.
+                                        Assert expected outcomes. Act steps should elicit some sort of response. Assert
+                                        steps verify the goodness or badness of that response. Sometimes, assertions are
+                                        as simple as checking numeric or string values. Other times, they may require
+                                        checking multiple facets of a system. Assertions will ultimately determine if
+                                        the test passes or fails.
+                                    </li></ul>
+                                <br>
+                                <ul style="list-style-type:none;"><li>Every major programming language has at least one test framework.
+                                    Frameworks like JUnit, NUnit, Cucumber, and pytest enable you, as the
+                                    programmer,
+                                    to automate tests, execute suites, and report results. However, the framework
+                                    itself doesn’t make a test case “good” or “bad.” You, as the tester, must know
+                                    how to write good tests!
+                                </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Example in
+                                    Calculator</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p class="grw-font">Python Reference file: calculator_test.py</p>
+                                <ul style="list-style-type:none;">
+                                    <li>def <b>test_add_numbers(clear_history_fixture)</b>:</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;"""test addition of numbers"""</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# pylint: disable=unused-argument,redefined-outer-name
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# <b>Arrange</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;numbers = (10.0, 20.0, 30.0)</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# <b>Act</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Calculator.add_numbers(numbers)</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# <b>Assert</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;assert <b>Calculations.get_first_calculation_object().get_output()
+                                        == 60.0</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;assert
+                                        isinstance(Calculations.get_last_calculation_object(), Addition)
+                                    </li></ul>
+                                <br>
+                                <ul style="list-style-type:none;">
+                                    <li>calculator_test.py method test_add_numbers tests add_numbers method of the
+                                        Calculator (calculator.py)
+                                        in arrange - we initialize the tuple to be ued for testing.
+                                        in act - we invoke method to be tested i.e, add_numbers and pass the tuple to
+                                        it.
+                                        in assert - we check the behaviour if the condition of the test met or not met
+                                        to define the success of the test case
+
+                                    </li>
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Example of
+                                    exception test case in Calculator</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                                <ul style="list-style-type:none;">
+                                    <li>def test_divide_numbers(clear_history_fixture):</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;"""test division of numbers"""</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# pylint: disable=unused-argument,redefined-outer-name
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<b># Arrange</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;my_numbers = (3.0, 1.0, 1.0)</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<b># Act</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Calculator.divide_numbers(my_numbers)</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<b># Assert</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;assert Calculations.get_first_calculation_result_value()
+                                        == "0.33"
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<b>with pytest.raises(ZeroDivisionError):</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;another_no = (1.0, 0.0) <b>#
+                                        Arrange</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculator.divide_numbers(another_no)
+                                        <b># Act</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assert
+                                        Calculations.get_last_calculation_result_value() == 1.0 <b># Assert</b></li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# Below statement is not part of any coverage</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;assert
+                                        isinstance(Calculations.get_last_calculation_object(), Division)
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Why testing is
+                                    important</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>The testing is important since it discovers defects/bugs before the delivery to
+                                        the client, which guarantees the quality of the software. It makes the software
+                                        more reliable and easy to use.
+                                    </li>
+                                    <li>Software testing is a method of determining whether the actual software product
+                                        meets the expected requirements and ensuring that the software product is free
+                                        of defects. It entails running software/system components through their paces
+                                        using manual or automated tools to evaluate one or more properties of interest.
+                                    </li>
+                                    <li>The goal of software testing is to find errors, gaps, or missing requirements in
+                                        comparison to the actual requirements.
+                                    </li>
+                                </ul>
+
+                                <p class="grw-font">Advantages
+                                <p>
+                                <ul>
+                                    <li>Finding bugs or issues in the code:Service/Product in early stages are upmost
+                                        important to avoid cascading issues.
+                                    </li>
+                                    <li><b>Saving cost</b>:bug
+                                        in the early phases, fixing them costs a reduced amount of money.
+                                    </li>
+                                    <li><b>Security:</b> Reliable and well tested code is the upmost important.
+
+                                        As a specific product undergoes testing, the user can be ensured that they are
+                                        going to receive a reliable product. The personal details of the user can be
+                                        safe. Users can receive products that are free from vulnerability with the aid
+                                        of software testing.
+                                    </li>
+                                    <li><b>Quality of Product/Service:</b> products should be serving the user in one
+                                        way or
+                                        the other. It is a must that it is going to bring the value, as per the promise.
+
+                                        Hence, it should function in a complete manner for ensuring an effective
+                                        customer experience. It is also necessary to check the compatibility of the
+                                        device.
+                                    </li>
+                                    <li><b>Enhancing the development process:</b>With the aid of Quality Assurance, you
+                                        can
+                                        find a wide array of scenarios and errors, for the reproduction of the error.
+
+                                        It is really simple and the developers need to fix the same in no time. In
+                                        addition to this, software testers should be working with the development team
+                                        parallelly, which is useful in the acceleration of the development procedure.
+                                    </li>
+                                    <li><b>Easy while adding new features:</b>The more interconnected and older the
+                                        code, the
+                                        more difficult it is to change. Tests counteract this calcification tendency by
+                                        allowing developers to confidently add new features. As a new developer,
+                                        changing older parts of your codebase can be terrifying, but with tests, you’ll
+                                        at least know if you’ve broken anything important. This helps in making your
+                                        software stand ahead in the market, and beat the competition.
+                                    </li>
+                                    <li>Performance of the software:software testing is considered to be an easy option
+                                        as
+                                        it helps in the determination of the performance of the software.
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">How to use
+                                    external data for testing</a>
+                            </h4>
+                        </div>
+                        <div id="collapse12" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>In below example, there are three files in reference - readfile.py, readcsv.py
+                                        and readcsv_test.py
+                                    </li>
+                                    <li>CSV file Addition.csv is placed under cal2../tests/testdata/Addition.csv
+                                    </li>
+                                    <li>Base class ReadFile initializes the protected member (_path) through
+                                        parameterized constructor init
+                                    </li>
+                                    <li>Subclass ReadCSV extends the property and behaviour of the baseclass meaning the
+                                        _path and init constructor as well.
+                                    </li>
+                                    <li>Subclass has instance method read_csv_file which reads the csv on provided
+                                        location and assign to dataframe.
+                                    </li>
+                                    <li>test file uses the os package to play around with the path.The path is used as a
+                                        fixture using @pytest.mark.datafiles.this we can pass to any method we want to
+                                        have the file path or using @pytest.mark.datafiles we can define multiple files
+                                        also.
+                                    </li>
+                                </ul>
+
+                                <p class="grw-font">Example</p>
+                                <ul style="list-style-type:none;">
+                                    <li>"""Base class for reading file"""</li></ul>
+                                <br><ul style="list-style-type:none;">
+                                <li><b>class ReadFile:</b></li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;"""Read file"""</li></ul>
+                                <ul style="list-style-type:none;">
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# The __init__ method is a constructor and runs as soon
+                                        as an
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# object of a Operation class is instantiated.</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;# pylint: disable=too-few-public-methods</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;def <b>__init__</b>(self, path: str):</li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""Parameterized Constructor set
+                                        the path"""
+                                    </li>
+                                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._path = path</li>
+                                </ul><br>
+                                <br><ul style="list-style-type:none;">
+                                <li>"""Subclass Class for Reading CSV"""</li>
+                                <li>import pandas as pd</li>
+
+                                <li>from calc.file_utils.readfile import ReadFile</li>
+
+
+                                <li><b>class ReadCSV(ReadFile):</b></li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;"""subclass extending ReadFile to read csv"""</li>
+
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;# pylint: disable=too-few-public-methods</li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;# This is the instance method</li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;def <b>read_csv_file(self):</b></li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""reading csv file"""</li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_frame =
+                                    pd.read_csv(self._path)
+                                </li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("data_frame : ",
+                                    data_frame[:])
+                                </li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return True</li></ul>
+                                <br>
+                                <br><ul style="list-style-type:none;">
+                                <li><b>"""Testing of Read CSV"""</b></li>
+                                <li>import os</li>
+                                <li>import pytest</li></ul>
+                                <br><ul style="list-style-type:none;">
+                                <li>from calc.file_utils.readcsv import ReadCSV</li></ul>
+                                <br><ul style="list-style-type:none;">
+                                <li>FIXTURE_DIR = os.path.join(</li>
+                                <li>
+                                    os.path.dirname(os.path.realpath('C://Users//SuchiK//PycharmProjects//calc2//')),
+                                </li>
+                                <li>'calc2//tests//test_data')</li>
+                                <li><b>@pytest.mark.datafiles(</b></li>
+                                <li><b>os.path.join(FIXTURE_DIR, 'addition.csv') )</b></li>
+                                <li>def <b>test_read_csv_file(datafiles):</b></li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;"""test read csv file"""</li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;assert ReadCSV(datafiles).read_csv_file() is True</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 sidenav">
+                <div class="text-center">
+                    <img class="img-fluid" height="180" width="180" src="images/testing.png"
+                         alt="image of different testing "><br><br>
+                    <p class="left">Unit Testing </p>
+                    <p class="left">AAA Testing</p>
+                </div>
+            </div> <!-- closed col-sm-2 sidenav -->
+        </div>
+
+    </div>
+
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <div>
+            SuchiKhare &#169;
+        </div>
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+            <a href="https://www.facebook.com" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/SuchiKhare/calc2/tree/cal2_part5_scratch" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="w3cvalidator/aaatesting.html" class="me-4 text-reset">
+                W3CValidator
+            </a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
