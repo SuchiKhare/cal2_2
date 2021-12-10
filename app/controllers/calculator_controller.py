@@ -58,6 +58,3 @@ class CalculatorController(ControllerBase):
                                    , result=my_output, print_lst=print_lst)
         return render_template('calculator.html', error=error)
 
-    @staticmethod
-    def get():
-        return render_template('calculator.html')
