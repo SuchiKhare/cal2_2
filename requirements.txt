@@ -1,10 +1,12 @@
-setuptools
+setuptools~=49.2.1
 wheel
 pytest-cov
-pytest
+pytest~=6.1.2
 pycodestyle
 pytest-pylint
 pandas
 Flask
-uWSGI
 wtforms
+Faker
+uWSGI
+

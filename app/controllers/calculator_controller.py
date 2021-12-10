@@ -2,6 +2,8 @@ from app.controllers.controller import ControllerBase
 from calc.calculator import Calculator
 from flask import render_template, request, flash
 
+from data.printing_results import Print
+
 
 class CalculatorController(ControllerBase):
     @staticmethod
@@ -20,7 +22,22 @@ class CalculatorController(ControllerBase):
             # this will call the correct operation
             getattr(Calculator, operation)(my_tuple)
             my_output = str(Calculator.get_last_result_value())
-            return render_template('result.html', input1=input1, input2=input2, operation=operation, result=my_output)
+            print_lst = [Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2),
+                         Print(input1, input2, operation, my_output), Print(1, 1, "Multiplication", 2)]
+            return render_template('result.html', input1=input1, input2=input2, operation=operation \
+                                   , result=my_output, print_lst=print_lst)
         return render_template('calculator.html', error=error)
 
     @staticmethod

@@ -4,9 +4,11 @@ from flask import Flask
 from app.controllers.beauty_controller import BeautyController
 from app.controllers.index_controller import IndexController
 from app.controllers.calculator_controller import CalculatorController
+import logging
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+logging.basicConfig(level=logging.INFO)
 
 
 @app.route("/", methods=['GET'])
