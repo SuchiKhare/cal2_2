@@ -2,8 +2,6 @@ from app.controllers.controller import ControllerBase
 from calc.calculator import Calculator
 from flask import render_template, request, flash
 
-from dto.printing_results import Print
-
 
 class OOPsController(ControllerBase):
     @staticmethod
@@ -19,4 +17,3 @@ class OOPsController(ControllerBase):
             return render_template('solid.html')
 
         return render_template('solid.html')
-
