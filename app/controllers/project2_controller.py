@@ -8,12 +8,10 @@ class OOPsController(ControllerBase):
     def get():
         page = request.args.get('page')
         if page == "pylint":
-            return render_template('pylintfile.html')
-        elif page == "caloop":
-            return render_template('caloops.html')
+            return render_template('pylint.html')
+        elif page == "cal-oop":
+            return render_template('oops.html')
         elif page == "aaa-test":
-            return render_template('aaatesting.html')
+            return render_template('aaa.html')
         else:
             return render_template('solid.html')
-
-        return render_template('solid.html')
