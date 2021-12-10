@@ -11,8 +11,8 @@ setup.py is a config file for pytest
 
 #how the calculator page looks like at this point of HW
 <img width="1019" alt="Image1" src="https://user-images.githubusercontent.com/90444833/145118241-302e1bad-51c5-4b6e-b689-7387819066ce.PNG">
-#Showing the error message is the field is empty
-<img width="1011" alt="2_no_proper_input" src="https://user-images.githubusercontent.com/90444833/145118242-64610d51-7636-45e4-8683-cbf1fca5a46d.PNG">
+#Showing the error message if the field(input 1 and/or input2)  empty
+<img width="1042" alt="2_no_proper_input" src="https://user-images.githubusercontent.com/90444833/145120254-cd71e629-4e6a-417c-b35c-3dd7e6e15d3b.PNG">
 #Division input
 <img width="1019" alt="3_division_input" src="https://user-images.githubusercontent.com/90444833/145118243-43ba5943-56e7-42ee-bb9f-ad2926f5fb2d.PNG">
 #Division result
